@@ -1,0 +1,114 @@
+html,body{
+  overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(images/bg.png);
+}
+form{
+    position: absolute;
+    left: 35%;
+    top: 11%;
+    border-radius: 10%;
+    background-color: rgb(58, 57, 57);
+    padding: 31px 68px 41px 68px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgba(0, 247, 255, 0.7);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+  }
+  100% {
+    border-color: rgba(0, 238, 255, 0);
+    box-shadow: 0 0 40px rgba(0, 247, 255, 0);
+  }
+}
+
+#create{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="text"],[type="email"],[type="password"]{
+    display: block;
+    height: 3vh;
+    background: transparent;
+    border:1px solid transparent;
+    border-bottom: 1.4px solid white;
+    color: white;
+    width: 100%;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    background-color: white;
+    color: black;
+}
+strong{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+button{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    width: 100%;
+    height: 6vh;
+}
+
+/* pop up message */
+
+#popup1{
+    position: absolute;
+    left: 35%;
+    bottom: 40%;
+    padding: 10px;
+    height: 36vh;
+    background-color: white;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .succ{
+    font-size: 30px;
+    text-align: center;
+  }
+  #popup1 a{
+    background-color: rgb(46, 175, 6);
+    color: white;
+    padding: 0 30px 0 30px;
+    position: relative;
+    left: 20%;
+    top: 17%;
+    width: 10%;
+    height: 6vh;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+
+  #result5{
+    color: rgb(0, 217, 255);
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+.modal1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: #474e5d91;
+    padding-top: 50px;
+  }
+
+ 
+  

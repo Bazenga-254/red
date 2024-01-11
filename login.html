@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="icon" href="images/icon.jpg">
+</head>
+<body>
+
+    <form id="loginForm" required autocomplete="on">
+      
+        <label id="login">Log In</label><br><br><br>
+      
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span><br><br>
+        
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br>
+
+        <p style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+         sans-serif;"><input id="check"  onclick="show()" type="checkbox">Show Password</p>
+        
+        <input id="submit"  type="submit" value="Log In"><br><br>
+
+        <a style="color: white;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 20%;" href="home.html">Back to home</a>
+      </form>
+      
+
+      
+          <!-- pop up message
+    <div id="pop1" class="modal1">
+        <div id="popup1" id="yes">
+        <p class="succ">Login Successful</p>
+      <img style="position: relative;
+      left: 44%; bottom: 16px;" src="images/tick.png" width="40px">
+      <a href="home.html">Ok</a>
+    </div>
+    </div> -->
+
+
+
+      <script src="script.js"></script>
+
+</body>
+</html>
+

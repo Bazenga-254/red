@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="createaccount.css">
+    <link rel="icon" type="icon" href="images/icon.jpg">
+</head>
+<body>
+
+    <form  name="register" id="myForm" onsubmit="validateForm(); return false;">
+        <label id="create">Create Account</label><br><br>
+
+        <label><strong>
+            Name: <input type="text" id="name" name="name">
+        </strong></label><br><br>
+
+        <label><strong>
+            Email:<input type="email" id="email" name="email">
+        </strong></label><br><br>
+
+        <label><strong>
+            Password: <input type="password" id="password" name="password">
+        </strong></label><br><br>
+
+        <label><strong>
+            Confirm Password: <input type="password" id="confirmPassword" name="confirmPassword">
+        </strong></label><br>
+        <p id="result5"></p>
+        <input  type="checkbox"  onclick="myFunction()"><span
+         style="color:white;">Show Password</span><br><br>
+        <button onclick="display()" type="submit">Sign Up</button><br><br>
+        <a style="color: white;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 27%;" href="home.html">Back to home</a>
+    </form>
+
+    <!-- pop up message -->
+    <div id="pop" class="modal1">
+    <div id="popup1" id="yes">
+    <p class="succ">Successfully created <br>
+  an account</p>
+  <img style="position: relative;
+  left: 44%; bottom: 16px;" src="images/tick.png" width="40px">
+  <a href="login.html">Ok</a>
+</div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

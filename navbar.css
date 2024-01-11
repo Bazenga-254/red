@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar .navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20px;
+}
+
+.navbar .navdiv ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    right: 10%;
+    border-radius: 20px;
+    padding: 10px 0 10px 0;
+}
+.navbar .navdiv ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 24px;
+    font-size: 21px;
+    transition: all 0.5s ease;
+}
+.navbar .navdiv ul li a:hover{
+    color: rgb(255, 217, 0);
+    text-decoration: underline 2px solid rgb(0, 89, 255);
+}
